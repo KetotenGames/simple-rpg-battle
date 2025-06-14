@@ -32,8 +32,8 @@ func on_player_action(action: String):
 			var damage = player.attack(enemy)
 			print("プレイヤーの攻撃:", damage, "ダメージ")
 		"defend":
-			# defend用のロジック(省略)
-			pass
+			player.defend()
+			print("プレイヤーは防御の構えを取った！")
 			
 	_check_battle_end()
 	is_player_turn = false
