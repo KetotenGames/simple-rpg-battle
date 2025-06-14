@@ -1,8 +1,0 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749887874
-battle_scene.tscn::PackedScene::2911357389530297445::1749887849::0::1::::<><>::res://scripts/Character.gd<>res://scripts/BattleManager.gd<>res://scripts/UI.gd
-icon.svg::CompressedTexture2D::1274047425124627711::1749856817::1749856817::1::::<><>::
-::res://scripts/::1749887849
-BattleManager.gd::GDScript::-1::1749887485::0::1::::BattleManager<>Node<>::
-Character.gd::GDScript::-1::1749887849::0::1::::Character<>Node2D<>::
-UI.gd::GDScript::-1::1749856817::0::1::::<>Control<>::

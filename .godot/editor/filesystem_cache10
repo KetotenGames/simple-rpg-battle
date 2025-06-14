@@ -1,8 +1,0 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749856841
-battle_scene.tscn::PackedScene::2911357389530297445::1749856817::0::1::::<><><>0<>0<><>::uid://btm6cmfjprgo::::res://scripts/Character.gd<>uid://dx1mnt5covqk6::::res://scripts/BattleManager.gd<>uid://bnuto6kco6oup::::res://scripts/UI.gd
-icon.svg::CompressedTexture2D/CompressedTexture2D::1274047425124627711::1749856817::1749856817::1::::<><><>0<>0<>52b1208c916ea34fc1e1f252e0790d2a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://scripts/::1749856817
-BattleManager.gd::GDScript::8828032139991772411::1749856817::0::1::::BattleManager<>Node<><>0<>0<><>::
-Character.gd::GDScript::110196108313584326::1749856817::0::1::::Character<>Node2D<><>0<>0<><>::
-UI.gd::GDScript::3341343473828662407::1749856817::0::1::::<>Control<><>0<>0<><>::
