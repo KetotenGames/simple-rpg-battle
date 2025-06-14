@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhqjvpi72ko2x"]
+
+[ext_resource type="Script" path="res://scripts/Character.gd" id="1_r5l0u"]
+[ext_resource type="Script" path="res://scripts/BattleManager.gd" id="2_5g7vw"]
+[ext_resource type="Script" path="res://scripts/UI.gd" id="2_5joda"]
+
+[node name="BattleScene" type="Node2D"]
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource("1_r5l0u")
+
+[node name="Enemy" type="Node2D" parent="."]
+script = ExtResource("1_r5l0u")
+
+[node name="BattleManager" type="Node" parent="."]
+script = ExtResource("2_5g7vw")
+player_node_path = NodePath("../Player")
+enemy_node_path = NodePath("../Enemy")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_5joda")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_right = 127.0
+offset_bottom = 85.0
+
+[node name="PlayerHPLabel" type="Label" parent="CanvasLayer/UI/VBoxContainer"]
+layout_mode = 2
+
+[node name="EnemyHPLabel" type="Label" parent="CanvasLayer/UI/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UI/VBoxContainer"]
+layout_mode = 2
+
+[node name="AttackButton" type="Button" parent="CanvasLayer/UI/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Attack"
+
+[node name="DefendButton" type="Button" parent="CanvasLayer/UI/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Defend"
